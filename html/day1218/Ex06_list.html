@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex06_list.html</title>
+</head>
+<body>
+    <!-- list : 여러가지요소들을 일렬로 나타낼때 사용하는 태그(목록)-->
+
+    <!--
+        1. 순서가 없는 리스트(unordered list)
+            <ul>, 
+                <li></li> -> 점으로 표현
+                <li></li>
+            </ul>
+        2. 순서가 있는 리스트(ordered list)
+            <ol>
+                <li></li> ->숫자로 표현
+                <li></li>
+            </ol>
+        3. 정의 리스트(definition)
+            <dl>
+                <dt>제목</dt>
+                <dd>설명</dd>
+            </dl>
+
+    --> 
+
+    <h1> 1. 순서가 없는 리스트 </h1>
+    <ul>
+        <li>산행예절</li>
+        <li>산행준비</li>
+        <li>산행종류</li>
+        <li>산행요령</li>
+        <li>등산식량</li>
+    </ul>
+
+    <ul style="list-style-type: circle;"> <!--빈 작은원-->
+        <li>산행예절</li>
+        <li>산행준비</li>
+        <li>산행종류</li>
+        <li>산행요령</li>
+        <li>등산식량</li>
+    </ul>
+
+    <ul style="list-style-type: square;"> <!--검은색 사각형-->
+        <li>산행예절</li>
+        <li>산행준비</li>
+        <li>산행종류</li>
+        <li>산행요령</li>
+        <li>등산식량</li>
+    </ul>
+
+    <ul style="list-style-type: disc;"> <!--ul태그의 기본속성값-->
+        <li>산행예절</li>
+        <li>산행준비</li>
+        <li>산행종류</li>
+        <li>산행요령</li>
+        <li>등산식량</li>
+    </ul>
+
+    <hr>
+    <h1> 2. 순서가 있는 리스트 </h1>
+    <ol>
+        <li>산행예절</li>
+        <li>산행준비</li>
+        <li>산행종류</li>
+        <li>산행요령</li>
+        <li>등산식량</li>
+    </ol>
+
+    <ol style="list-style-type: upper-alpha;">
+        <li>산행예절</li>
+        <li>산행준비</li>
+        <li>산행종류</li>
+        <li>산행요령</li>
+        <li>등산식량</li>
+    </ol>
+
+    <ol style="list-style-type: lower-alpha;">
+        <li>산행예절</li>
+        <li>산행준비</li>
+        <li>산행종류</li>
+        <li>산행요령</li>
+        <li>등산식량</li>
+    </ol>
+------------------
+    <ol style="list-style-type: upper-roman;">
+        <li>산행예절</li>
+        <li>산행준비</li>
+        <li>산행종류</li>
+        <li>산행요령</li>
+        <li>등산식량</li>
+    </ol>
+
+    <!-- none : 스타일을 없애는 값 
+        *li 이나 ol 태그 상관없이 사용가능 -->
+    <ol style="list-style-type: none">
+        <li>산행예절</li>
+        <li>산행준비</li>
+        <li>산행종류</li>
+        <li>산행요령</li>
+        <li>등산식량</li>
+    </ol>
+    <hr>
+    <h1> 3. 정의 리스트 </h1>
+    <dl>
+        <dt>호박</dt>
+        <dd>- 박과 한해 살이 덩굴성 채소</dd>
+    </dl>
+</body>
+</html>

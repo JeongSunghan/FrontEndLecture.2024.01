@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /*    
+            HTML태그  : 박스 모양으로 구성 > box model 
+            
+            1. content : 내용, 텍스트나 이미지가 들어가는 실질적인 부분
+                * inline 크기를 정하는  요소
+
+            2. padding : 눈에 보이는 영역은 아니지만, 공간은 차지함
+                    테두리의 경계와 내용 사이에 있는 공간, 테두리와 내용 사이간의 간격, 상 하 좌 우 수치 존재
+                    padding : 수치 (1 ~ 4개 까지 숫자로 입력가능)
+                    4개 : 상 우 하 좌 (시계방향)
+                    3개 : 상 (좌우) 하
+                    2개 : (상하) (좌우)
+                    1개 : (상하좌우)
+
+            3. border : 테두리, 내용과 패딩을 감싼 영역, 기본값이 0px(테두리가 존재하지 않음)
+                    border-style 옵션
+                    solid : 실선
+                    dotted : 점선
+                    dashed : 긴 점선
+                    double : 이중 실선
+                    none : 없음
+                    hidden : 테두리가 있지만, 보이지 않음(투명선)
+
+                    border-width : 두께
+                    border-color : 색상
+                        ㄴ 다적기 귀찮아 할 때, 밑에 코드 사용
+                    border : 두께 종류 생상 ; //한줄에 작성
+
+            4. margin : 마진, 테두리 밖의 공간,  테두리와 다른 요소(태그)간의 간격
+                    * 상하 관계에서는 마진이 중첩 가능
+                    * 좌우 관계에서는 마진이 중첩 불가능 (*예외)
+                    * 예외케이스 : 마진 상쇄 봉합
+
+                    마진의 경우도 padding 처럼 설정되며, 마진의 경우 시간과 동시에 0으로 설정, auto 옵션 설정
+                    *auto란? : 부모 태그안에서 정중앙에 위치하도록 설정하는 옵션 (*가운데정렬)
+    */
+
+    div{
+
+        
+        background-color:sandybrown;
+        /*  
+        border-style: double;
+        border-width: 5px;
+        border-color: skyblue; */
+
+        border: 1px solid skyblue
+    }
+
+    #padding5{
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    #padding4{
+
+        /* 상 우 하 좌(시계) */
+        padding : 11px 22px 13px 24px 
+    }
+
+    #padding3{
+        /* 상 (우/좌) 하 */
+        padding:10px 20px 30px;
+    }
+
+    #padding2{
+        /* 상/하, / 우,좌 */
+        padding : 10px 20px
+    }
+
+    #padding1{
+        /* 상하좌우 */
+        padding:50px
+
+    }
+
+    #divAuto{
+        border : 2px solid tomato;
+
+        /* margin-left : 50px;
+        margin-right : 50px; */
+
+        /* margin: 0px 10px */
+
+        margin: auto; /* 마진을 자동으로 설정*/
+        width: 150px; /* 너비를 지정하고 태그의 크기의 마진을 자동으로 설정*/
+    }
+</style>
+
+<body>
+    <div id="padding5"> 패딩테스트5 </div>
+    <div id="padding4"> 패딩테스트4 </div>
+    <div id="padding3"> 패딩테스트3 </div>
+    <div id="padding2"> 패딩테스트2 </div>
+    <div id="padding1"> 패딩테스트1 </div>
+
+    <h1> 오토테스트중입니다. </h1>
+    <div id="divAuto">
+            오토테스트
+    </div>
+    
+  
+    
+</body>
+</html>

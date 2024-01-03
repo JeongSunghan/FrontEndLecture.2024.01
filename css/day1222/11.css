@@ -1,0 +1,198 @@
+#main{
+    border: 1px solid rgb(204, 201, 201);
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#m11{
+    margin :auto;
+    padding :20px 20px;
+    text-align: center;
+}
+
+#logbox{
+    padding: 10px;
+}
+
+#id{
+    margin: auto;
+    border: 1px solid rgb(182, 181, 181);
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 3px;
+    text-align: center;
+    width:310px;
+    
+}
+
+.idin{
+    padding: 0px 25px;
+    height: 30px;
+    width: 250px;
+    font-size: small;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid grey
+}
+
+.idin2{
+    padding: 0px 25px;
+    height: 30px;
+    width: 250px;
+    font-size: small;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+}
+
+
+.idin:focus{
+    outline: 1px solid rgb(255, 120, 120);
+}
+
+.idin2:focus{
+    outline: 1px solid rgb(255, 120, 120);
+}
+
+
+input#check_btn{
+    display:none;
+    }
+  
+  input#check_btn + label{
+    cursor:pointer;
+   }
+  
+  input#check_btn + label > span{
+    vertical-align: middle;
+    padding-left: 7px;
+    font-size: 10px;
+    
+   }
+  
+  input#check_btn + label:before{
+    content:"";
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin-left: 17px;
+    border:2px solid #F47C7C;
+    border-radius: 15px;
+    vertical-align:middle;
+    }
+    
+  input#check_btn:checked + label:before{
+    content:"";
+    background-color:#F47C7C;
+    border-color:#F47C7C;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    }
+
+
+#loginBtn{
+    margin: auto;
+    margin-left:20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: auto;
+    color: aliceblue;
+    width: 310px;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(241, 66, 104);
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-style: hidden;
+}
+
+.hr-sect {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 12px;
+    margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 10px 8px; 
+}
+
+#icon{
+    text-align: center;
+}
+
+.icon2{
+    text-decoration-line: none;
+}
+
+#find{
+    text-align: center;
+
+}
+.findid{
+    padding: 5px;
+    text-decoration-line: none;
+    color: black;
+    font-size: 10px;
+}
+
+.findpw{
+    padding: 5px;
+    text-decoration-line: none;
+    color: black;
+    font-size: 10px;
+}
+
+.findorder{
+    padding: 5px;
+    text-decoration-line: none;
+    color: black;
+    font-size: 10px;
+}
+
+.findreg{
+    padding: 5px;
+    text-decoration-line: none;
+    color: black;
+    font-size: 10px;
+}
+
+.end {
+    text-align: center;
+    font-size: 10px;
+    color: grey;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.ig{
+    text-align: center;
+}
+
+.ig img{
+    margin: auto;
+    margin-top: 15px;
+    width:400px;
+    height: 75px;
+}
+
+#icon{
+    text-align: center;
+}
+
+#icon img{
+    width: 40px;
+    height: 40px;
+}

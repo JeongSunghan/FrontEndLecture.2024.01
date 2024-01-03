@@ -1,0 +1,91 @@
+#container{
+    border: 1px solid red;
+}
+
+#online{   
+    padding: 10px;
+    margin: 13px;
+    font-size: 14px;
+    background-color: greenyellow;
+}
+
+#menubtn{
+    display: inline-flex;
+}
+
+.m{
+    display: inline-block;
+    width: 75px;
+    font-size: 14px;
+    font-style: bold;
+    color: green;
+    text-align: center;
+}
+section{
+    position: relative;
+    left:15px;
+    top:15px;
+    border: 3px solid chartreuse;
+    display: inline-block;
+    padding: 30px;
+    padding-left: 1px;
+    margin: 150px;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 700px;
+    height: 600px;
+}
+
+#gisahead{
+    border: 1px solid brown;
+    padding: 10px;
+    margin: auto;
+    width: 640px ;
+}
+
+.gisa1{
+    background-color: yellow;
+    margin: auto;
+}
+
+#gisahead2{
+    border: 1px solid brown;
+    padding: 30px;
+    margin: auto;
+    width: 600px ;
+}
+
+#t01{
+    background-color: rgb(0, 0, 255);
+    color: white;
+    margin: 20px;
+}
+
+.odd{
+    background-color: rgb(184, 233, 217);
+    box-sizing: border-box;
+    color: black;
+}
+
+.even{
+    background-color: aquamarine;
+    color: black;
+}
+
+aside{
+    border: 3px solid hotpink;
+    width: 400px;
+    float: right;
+    position: relative;
+    right: 20px;
+    bottom: 800px;
+}
+
+footer{
+    border: 2px solid orange;
+    width: max-content;
+    float: bottom;
+    position: relative;
+    bottom: 50px;
+    left:50px;
+}

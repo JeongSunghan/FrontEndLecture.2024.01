@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex99_mainform</title>
+</head>
+<body>
+    <form id="main" action="#">
+    <fieldset>
+        <legend>로그인 정보</legend>
+        <ol>
+        <li>아이디 <input type="text"/><br/></li>
+        <li>비밀번호 <input type="password"><br/></li>
+        <li>비밀번호 확인 <input type="password"><br/></li>
+        <li>회원 등급 <input type="text" value="준회원" readonly/></li>
+    </ol>
+    </fieldset><br/>
+
+    <fieldset>
+    <legend>개인 정보</legend> 
+    <ol>
+        <li>이름 <input type="text" pattern="^[가-힣]{2,4}|[a-zA-Z]{2,10}\s[a-zA-Z]{2,10}" maxlength="5" placeholder="5자미만 공백없이"/> <br/></li>
+        <li>메일주소 <input type="email" pattern="^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}"placeholder="abcd@domain.com"> </li>
+        <li>연락처 <input type="tel" pattern="(010|011)-\d{3,4}-\d{4}"> <br/></li>
+        <li>생일 <input type="date"required> <br/></li>
+    </ol>
+    </fieldset><br/>
+
+    <fieldset>
+        <legend>코딩 숙련도(상,중,하)</legend>
+            <ol>
+                <li><input id="slider" type="range" min="1" max="3" list="tickmarks"></li>
+                <datalist id="tickmarks">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </datalist>
+            </ol>
+    </fieldset><br/>
+
+    <fieldset>
+        <input type="submit" value="제출">
+    </fieldset>
+</form>
+    
+    
+
+
+    
+    
+
+
+    
+</body>
+</html>

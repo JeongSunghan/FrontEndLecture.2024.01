@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex04_input.html</title>
+</head>
+<body>
+    <!-- input : 사용자(클라이언트)가 값을 입력할 수 있도록 도와주는 태그 
+        입력의 종류가 무수히 많기에 "type"이라는 속성은 필수이다.
+
+        type="text" *기본값
+        type="속성" : 다양한 모양을 구현 (*빈태그) -->
+     이름 : <input /><br>
+     별명 : <input type="text" /> <br>
+     비밀번호 : <input type="password" /> <br>
+     <hr/>
+
+    <!-- 
+        checkbox : 다중 항목을 다중 선택할 때
+        ;ex) 동의서 작성
+        radip : 다중 항목들 중에 단일 선택을 할 때
+        ;ex) 성별 선택, MBTI선택 -->
+     <input type="checkbox" /> <input type="radio"/> <br>
+     <hr/>
+
+     <!-- name 속성 : "radio 타입 에서만" 같은 그룹임을 나타내주는 속성 -->
+     성별 : <input type="radio" name="gender"/> 남성
+            <input type="radio" name="gender"/> 여성
+    <br>
+
+    체크 : <input type="checkbox" name="chk"/> 체크1
+        <input type="checkbox" name="chk"/> 체크2
+    
+    <!-- label 태그 : input태그와 문자를 연결해주는 태그 
+        input 태그 : checkbox, radio, text 등..
+        input 태그의 문자 : 성별, 이름
+
+        * 연결방법
+        <input id = " "/>
+        <label for = " ">내용</label>
+            "input태그의 id 속성값과 label 태그의 for 속성값"이 동일하면 연결가능
+            *id의 속성값은 태그별로 유일한 값으로 작성하는걸 권장 
+            *label 태그의 내용을 선택하면 input태그가 선택된 것 처럼 작용
+        -->
+        <br>   
+        <hr>
+        성별 : <input type="radio" name="gender" id="gender1"/>
+               <label for="gender1">남성</label>
+
+               <input type="radio" name="gender" id="gender2"/> 
+               <label for="gender2">여성</label>   
+    
+        <br/>
+        <hr/>
+    색상 : <input type="color"/><br/>
+    날짜 : <input type="date" value="2023-12-19"
+            min ="2023-12-18" max="2023-12-25"/> <br/>
+
+    범위 : <input type="range" min="0" max="10" value="2"/> <br/>
+    <!-- min : 최소값, max: 최대값, value = 설정 -->
+    숫자 : <input type="number" step="10" min="0"/> <br/>
+    <!-- step : 단위 -->
+    힌트 : <input type="text" placeholder="아이디를 입력해주세요"/>
+    <!-- paceholder = 칸에 흐릿하게 나오는 글자 -->
+    오토포커스 : <input type="text" autofocus> <br/>
+    <!-- autofocus = 실행 후 커서가 오토포커스를 지정한 구간에서 시작 -->
+
+    <input type="checkbox" checked/> <input type="radio"/> <br>
+    <input type="checkbox" /> <input type="radio" checked/> <br>
+    <!-- checked = 실행 후 설정한 구간에 미리 체크 후 시작 -->
+
+    정규식(핸드폰)* : <input type="text" pattern="(010|011)-\d{3,4}-\d{4}"><br/>
+    <!-- pattern > 현재 기능이 구현되어있지 않은 형태 :  -->
+
+    <button>버튼</button>
+    <input type="button" value="버튼2"/>
+
+
+
+
+
+
+
+
+</body>
+</html>

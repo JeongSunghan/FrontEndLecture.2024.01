@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex99_SimpleFrom</title>
+</head>
+<body>
+    <fieldset>
+        <legend>회원가입</legend>
+        <ol>
+    <li>이름 <input type="text" placeholder="이름"></br></li>
+
+    <li>성별 <input type="radio" name="gender" id="gender1">
+            <label for="gender1">남자</label>
+
+            <input type="radio" name="gender" id="gender2">
+            <label for="gender2">여자</label>
+            <br/></li>
+
+    <li>직업 <select>
+            <option>프로그래머</option>
+            <option>학생</option>
+            <option>선생</option>
+            </select>
+            </br></li>
+
+    <li>취미 <input type="checkbox" name="chk" id="sleep"/>
+            <label for="sleep">잠자기</label>
+
+            <input type="checkbox" name="chk" id="eat"/> 
+            <label for="eat">먹기</label>
+
+            <input type="checkbox" name="chk" id="breath"/>
+            <label for="breath">숨쉬기</label>
+
+            <input type="checkbox" name="chk" id="wow"/> 
+            <label for="wow">멍때리기</label>
+            <br/></li>
+
+    <li>애인 <input type="radio" name="bfgf" id="couple">
+            <label for="couple">있다</label>
+
+            <input type="radio" name="bfgf" id="solo">
+            <label for="solo">없다</label>
+            <br/></li>
+
+<form action="Ex99_mainform.html" method="get" target="_blank">
+    <li><input type="submit" value="확인"/>
+        <input type="reset" value="취소"/> <br/></li>
+
+    <li><input type="text" style="width: 200px; height: 100px;" style="word-break: break-all;"><br/></li>
+
+    <li>빈값 : <input type="text" style="width: 200px;" height="100px" required/><br/></li>
+
+    <li>사이즈 : <input type="text" style="width: 300px;" height="100px"><br/></li>
+
+    <li>초기값 : <input type="text" value="초기값" style="width: 150px;" height="100px"><br/></li>
+
+    <li>초기값 변경X : <input type="text"  value="초기값" readonly="초기값" style="width: 150px;" height="100px">
+    <br/></li>
+
+    <li>입력 한계 : <input type="text" style="width: 150px;" height="100px" maxlength="5"><br/></li> 
+
+    <li>미사용 : <input type="text" style="width: 150px;" height="100px" disabled/><br/></li> 
+</ol>
+</form>
+</fieldset>
+    
+
+    
+</body>
+</html>

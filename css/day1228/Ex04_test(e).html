@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 1200px;
+            border : 2px solid black;
+            overflow: hidden;
+        }
+
+        .title{
+            margin-left : 50px;
+        }
+        .subTitle{
+            margin-left : 50px;
+        }
+        hr{
+            width: 1180px;
+            margin: auto;
+        }
+        
+
+        select:first-child{
+            margin-left: 30px;
+        }
+        select{
+            margin: 10px 10px;
+            margin-right: 25px;
+        }
+        .dropdown-search{
+            display:inline;
+        }
+        .dropdown{
+            float:left;
+        }
+        .search{
+            float:right;
+            margin: 10px;
+        }
+
+        .main{
+            margin-left: 10px;
+            /* border: 2px solid hotpink; */
+            float : left;
+        }
+
+        .sidebar{
+            float : right;
+            width: 200px;
+            /* border: 2px solid green; */
+        }
+
+        .sidebar a{
+            color: gray;
+            margin-left: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <h1 class = "title">
+            HTML5 Example Preview
+        </h1>
+        <p class = "subTitle">한빛아카데미</p>
+        <div class ="dropdown-search">
+            <hr class = "hr1">
+            <div class = "dropdown">
+                <select>
+                    <option value="option1">HTML</option>
+                    <option value="option2">HTML2</option>
+                    <option value="option3">HTML3</option>
+                </select>
+                <select>
+                    <option value="option1">CSS3</option>
+                    <option value="option2">CSS2</option>
+                    <option value="option3">CSS1</option>
+                </select>
+                <select>
+                    <option value="option1">JavaScript</option>
+                    <option value="option2">JavaScript2</option>
+                    <option value="option3">JavaScript3</option>
+                </select>
+            </div>
+            <div class = "search">
+                <input type="text"><button type = "submit">검색</button>
+            </div>
+            <hr class = "hr2">
+        </div>
+        <div class = "main">
+            <h3>HTML5 개요와 활용</h2>
+            
+            <p>2019년 02월 14일</p>
+
+            <img src="apple.jpg" alt="apple" width="430px" height="280px">
+            <p>테스트 데이터</p>
+
+        </div>
+        <div class = "sidebar">
+            <div class = "sidebar1">
+                <h4>카테고리</h4>
+                <a href="#">데이터</a><br>
+                <a href="#">데이터</a><br>
+                <a href="#">데이터</a><br>
+                <a href="#">데이터</a><br>
+                <a href="#">데이터</a>
+            </div>
+            <div class = "sidebar2">
+                <h4>최근 글</h4>
+                <a href="#">데이터</a><br>
+                <a href="#">데이터</a><br>
+                <a href="#">데이터</a><br>
+                <a href="#">데이터</a>
+            </div>
+        </div>
+        <hr style="margin-top: 600px;">
+        <p style="margin-left: 10px;">IT Cookbookk HTML5 Programming</p>
+
+
+    </div>
+</body>
+</html>

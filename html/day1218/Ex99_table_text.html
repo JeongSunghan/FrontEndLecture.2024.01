@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex99_table_text.html</title>
+</head>
+<body>
+    <h7>1번 문제</h7>
+<table border="1">
+        <tr>
+            <td ></td>
+            <th>김씨</th>
+            <th>이씨</th>
+            <th>박씨</th>
+        </tr>
+        <tr>
+            <th>월급</th>
+                <td>100원</td>
+                <td>200원</td>
+                <td>400원</td>
+        </tr>
+        <tr>
+            <td>월급</td>
+                <td>100원</td>
+                <td>200원</td>
+                <td>300원</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- ======================================================= -->
+    <h7>2번 문제</h7>
+        <table border="2">
+            <tr>
+                <td colspan="5">1</td>
+            </tr>
+            <tr>
+                <td rowspan="5">6</td>
+                <td colspan="4">7</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td rowspan="2">13</td>
+                <td>14</td>
+                <td rowspan="3">15</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td colspan="2">22</td>
+                <td>24</td>
+            </tr>
+        </table>
+
+        <hr>
+        <h7>3번 문제</h7>
+        <table border="1">
+            <tr>
+                <th colspan="2">부서명</th>
+                <th>전화번호 (02+)</th>
+                <th>팩스번호 (02+)</th>
+            </tr>
+                <td colspan="2">종합상황실</td>
+                <td>123-1001 ~ 1005</td>
+                <td>321-1001</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">비서실</td>
+                <td>비서실장</td>
+                <td>123-1111</td>
+                <td rowspan="2">321-1002(사장)<br>
+                    321-1003(감사)
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="1">비서실</td>
+                <td>123-1112(사장)<br>
+                    123-1113(감사)
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">홍보실</td>
+                <td>홍보실장</td>
+                <td>123-1001</td>
+                <td rowspan="3">321-1101</td>
+            </tr>
+            <tr>
+                <td>홍보부</td>
+                <td>123-2001~123-2009</td>
+            </tr>
+            <tr>
+                <td>국제협력부</td>>
+                <td>123-1230-1234</td>
+            </tr>
+
+            
+            
+        </table>
+
+   <!--   <table></table> : 테이블을 구성하기 의한 가장 큰 범위의 태그
+        <tr></tr> : 가로줄을 만드는 태그
+        <td></td> : 셀(칸)을 만드는 태그
+        
+        *<th></th> : 표의 제목을 만드는 태그(td대신 사용) 
+    
+        * td => 기본값 : 보통글씨, 왼쪽정렬
+        * th => 기본값 : 굵은글씨, 가운데정렬
+        *thead / tbody => 나중에(디자인에 영향을 주지않음) -->
+        <!-- border="1" : 테이블의 윤곽선 두께 -->
+        <!-- 테이블 병합 -->
+<!-- colspan : 열 합치기=>가로 열 병합
+     rowspan : 행 합치기=>세로 행 병합

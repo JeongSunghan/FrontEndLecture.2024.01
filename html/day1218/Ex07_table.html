@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07_table.html</title>
+</head>
+<body>
+    <!-- 
+        <table></table> : 테이블을 구성하기 의한 가장 큰 범위의 태그
+        <tr></tr> : 가로줄을 만드는 태그
+        <td></td> : 셀(칸)을 만드는 태그
+        
+        *<th></th> : 표의 제목을 만드는 태그(td대신 사용) 
+    
+        * td => 기본값 : 보통글씨, 왼쪽정렬
+        * th => 기본값 : 굵은글씨, 가운데정렬
+        *thead / tbody => 나중에(디자인에 영향을 주지않음)
+
+    -->
+
+        <!-- border="1" : 테이블의 윤곽선 두께 -->
+    <table border="1">
+        <tr>
+            <th>11111</th>
+            <th>22222</th>
+        </tr>
+        <tr>
+            <td>33333333</td>
+            <td>44444444</td>
+
+        </tr>
+    </table>
+    <hr>
+    
+<table border="1">
+    <tr>
+        <th>언어</th>
+        <th>난이도</th>
+        <th>학습기간</th>
+    </tr>           
+
+    <tr>
+        <td>HTML</td>
+        <td>하</td>
+        <td>1주</td>
+    </tr>
+    <tr>
+        <td>CSS</td>
+        <td>중</td>
+        <td>1주</td>
+    </tr>
+    <tr>
+        <td>Javascripts</td>
+        <td>하</td>
+        <td>1주</td>
+    </tr>
+</table>
+
+<hr>
+<!-- 테이블 병합 -->
+<!-- colspan : 열 합치기=>가로 열 병합
+     rowspan : 행 합치기=>세로 행 병합
+-->
+<table border="1">
+    <tr>
+        <td colspan="2">1</td> 
+        <!-- 가로로 무조건 2칸 -->
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+</table>
+
+
+<table border="1">
+    <tr>
+        <td rowspan="2">1</td>
+        <!-- 세로로 무조건 2칸 -->
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>4</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
+
+<!-- 단축키 모음 
+    1. shift + alt + 화살표 = 한줄 복사
+    2. alt + 화살표 = 한줄이동
+    3. tab = 들여쓰기
+    4. shift + tab = 반대로 들여쓰기
+    5. ctrl + / = 주석만들기, 풀기 -->

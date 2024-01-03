@@ -1,0 +1,41 @@
+<!-- 
+    Ex04_import.html
+ -->
+
+ <!-- CSS  스타일을 적용하는 방법 3가지
+        1. 인라인 스타일 : 대상이 하나의 태그
+            <tagName style=" ">
+
+        2. 내부 스타일 시트 : 대상이 하나의 HTML 문사
+                <style> </style>
+
+        3.  외부 스타일 시트 + CSS 파일이 존재
+                ; CSS가 필요할때마다 사용가능(재활용성이 높으며, 제일 편함)
+        <link rel = "stylesheet" href="외부 CSSS 파일 ">
+
+        * 외부 스타일시트명은 ~~.css 로생성
+        <link>태그로 연결(호출)
+
+        * 외부스타일을 사용하는 이유
+            ; 웹페이지를 구현하는데 필요한 언어가 다양합니다.
+            >하나의 파일에 모든 언어가 써있다면 복잡하다.
+            >지금 적용한 코드를 다른 페이지에도 적용해야한다면 복사해서 넣어야 함.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out_sytle.css"/>   
+    
+</head>
+<body>
+    <div>테스트</div>
+    <p> 인라인스타일</p>
+    <p> 내부스타일시트</p>
+    <p> 외부스타일시트</p>
+    
+</body>
+</html>

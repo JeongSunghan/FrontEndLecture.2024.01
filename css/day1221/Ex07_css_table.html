@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex07_css_table</title>
+</head>
+<body>
+
+    <style>
+        ol,ul {
+            
+            list-style-type : none;
+            border : 1px solid black;
+
+            background-color: darkseagreen;
+            /* ol과 ul의 디자인상 들여쓰기가 기본값. */
+            padding: 0px;
+        }
+
+        li {
+            border: 1px solid red;
+        }
+
+        table{
+            border: 1px solid black;
+            border-collapse: separate;
+            border-spacing: 20px 30px;
+            /* collapse = border를 합침
+            seprate = border를 분리
+            */
+            width : 50%;
+            height: 300px;
+            /* 너비 및 높이는 고정할 시 문제가 되는 경우가 있다. */
+            text-align: center;
+        }
+
+        tr{
+            border: 1px solid red;
+        }
+
+        td{
+            border: 1px solid blue;
+            text-align: center; /* 가로정렬 */
+            vertical-align: bottom;  /*t세로정렬*/
+
+            /* collapse = border를 합침
+                seprate = border를 분리
+            */
+        }
+
+    </style>
+
+    <ol>
+        <li>사과</li>
+        <li>딸기</li>
+        <li>바나나</li>
+        <li>수박</li>
+    </ol>
+    
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    
+    <table>
+        <tr>
+            <td>100</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td>300</td>
+            <td>400</td>
+        </tr>
+    </table>
+</body>
+</html>
