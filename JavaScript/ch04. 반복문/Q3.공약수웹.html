@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공약수</title>
+    <script>
+        function check() {
+            let num = Number(document.getElementById('num').value);
+            let num1 = 24, num2 = 60
+            let commonDivisors =[];
+                for (let i = 1; i <= Math.min(num1, num2); i++) {
+                if(num1 % i == 0 && num2 & i == 0)
+                commonDivisors.push(i);
+            }
+            document.write(`${num1},${num2}의 공약수는 ${commonDivisors}`);
+                
+            let resultTag = document.getElementById('result');
+        }            
+    </script>
+    </script>
+</head>
+<body>
+    <h3>공약수 구하기</h3>
+    <hr>
+    <input type ="text" id ="num">
+    <button onclick="check()">확인</button>
+    <hr>
+    <div id="result"></div>
+</body>
+</html>
