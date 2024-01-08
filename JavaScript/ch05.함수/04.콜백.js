@@ -1,4 +1,4 @@
-// Call bak 함수
+// Call back 함수
 // 함수안에 파라메타(매개변수,인수)로 함수로 넣어준다.
 function callFiveTimes(callback) {
     for (let i = 0; i < 5; i++)
