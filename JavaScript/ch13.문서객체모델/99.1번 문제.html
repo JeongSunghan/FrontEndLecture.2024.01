@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            const btn = document.getElementById('btn');
+            btn.onclick = function(){
+                let num1 = parseInt(document.getElementById('num1').value);
+                let num2 = parseInt(document.getElementById('num2').value);
+                let resultSpan = document.getElementById('result');
+                let arr = [];
+
+                if (num1 >= 1 && num1 <= 20 && num2 >= 10 && num2 <= 30 && num2 >= num1 + 4) {
+                    for (let i = num1; i <= num2; i++){
+                        arr.push(2 ** i);
+                    }
+                    resultSpan.innerHTML = arr.join(', ');
+                } else {
+                    resultSpan.innerHTML = '조건에 맞는값을 입력하세요.';
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button id="btn">실행</button>
+    <span id="result"></span>
+</body>
+</html>

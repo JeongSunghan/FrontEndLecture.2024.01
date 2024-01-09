@@ -18,7 +18,8 @@ console.log(newFruits);
 // 3-2. join()
 console.log(`내가 갖고 싶은 차는 ${cars.join(', ')} 입니다.`);
 
-// 3-3. pop(), 중요 /자기 파괴적(self destructive) 메소드 = 내가 이 오퍼레이션을 취하고 나면 내가 바뀐다.
+// 3-3. pop(), 중요 
+//자기 파괴적(self destructive) 메소드 = 내가 이 오퍼레이션을 취하고 나면 내가 바뀐다.
 console.log(cars.pop());            //맨 뒤에 있는 요소를 끄집어 낸다. => array에서 퇴출당함
 console.log(cars);
 
