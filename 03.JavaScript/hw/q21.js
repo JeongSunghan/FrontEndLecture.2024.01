@@ -1,27 +1,20 @@
-function ans1() {
-    let num1 = Number($('#num1').val());
-    let num2 = Number($('#num2').val());
-    if (num1 < 1 || num1 > 20 || num2 < 10 || num2 > 30 || num2 - num1 < 4) {
-        alert('입력값의 범위를 확인하고 다시 입력하세요.');
-        return;
-    }
-    let powerArr = [];
-    for (let i = num1; i <= num2; i++)
-        powerArr.push(2 ** i);
-    let resultStr = '';
-    /* for (let element of powerArr)
-        resultStr += element + '<br>'; */
-    for (let i = 0; i < powerArr.length; i++) {
-        if ((i + 1) % 5 == 0)
-            resultStr += powerArr[i] + '<br>';      // 다섯개 찍고 줄바꿈
-        else {
-            if (i == powerArr.length - 1)
-                resultStr += powerArr[i];           // 맨 마지막 요소뒤에는 , 를 붙이지 않겠다
-            else
-                resultStr += powerArr[i] + ', ';
+window.onload = function () {
+    const btn = document.getElementById('btn');
+    btn.onclick = function () {
+        let num1 = parseInt(document.getElementById('num1').value);
+        let num2 = parseInt(document.getElementById('num2').value);
+        let resultSpan = document.getElementById('result');
+        let arr = [];
+
+        if (num1 >= 1 && num1 <= 20 && num2 >= 10 && num2 <= 30 && num2 >= num1 + 4) {
+            for (let i = num1; i <= num2; i++) {
+                arr.push(2 ** i);
+            }
+            resultSpan.innerHTML = arr.join(', ');
+        } else {
+            resultSpan.innerHTML = '조건에 맞는값을 입력하세요.';
         }
     }
-    $('#result1').html(resultStr);
 }
 
 /*
