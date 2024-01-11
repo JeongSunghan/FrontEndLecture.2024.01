@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Focus</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+/* 
+        window.onload = function(){
+            let input1 = document.querySelectorAll('input')[0];
+            let input2 = document.querySelectorAll('input')[1];
+            // 인풋태그는 배열로 온다
+
+            input1.onkeyup = function(e) {      //이벤트를 받음
+                if (input1.value.length >= 6)   //인풋1 길이가 6보다 크거나 같으면
+                    input2.focus();             //인풋2로 포커스 이벤트 지정
+            } 
+            input2.onkeyup = function(e) {      //다음칸에 백스페이스 할 시 이전칸으로 오는코드
+                if (e.keyCode == 8  && input2.value.length == 0)        
+                //입력 글자가 없고,백스페이스를 눌렀을 때.                 
+                //8은 backspace
+                    input1.focus();     //인풋1 으로 포커스 이벤트 지정
+            }
+        }
+         */
+        $(document).ready(() => {
+            // let input1 = $('input').get(0);
+            // let input2 = $('input').get(1);
+
+            $('#input1').on('keyup', function(e) {
+                if ($(this).val().length >= 6)
+                    $(`#input2`).focus();
+
+            });
+            $(`#input2`).on('keyup', function(e) {
+                if (e.keyCode == 8 && $(this).val().length == 0)
+                    $(`#input1`).focus();
+            });
+        });
+    </script>
+</head>
+<body style="margin: 50px;">
+    주민등록번호 : <input id="input1" type="text" maxlength="6" autofocus>
+    <span>- </span>
+    <input id="input2" type="text" maxlength="7">
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrameAnimation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(()=>{     //자바스크립트 용어로 window.onload = 함수먼저실행 그 후 바디로 넘어감
+            let frames = [];    //변수선언 = 프레임이라는 변수인데 배열로 놓겠다.
+            for (let i=0; i<=14; i++)   //반복문 = i가 14보다 작거나 같을때 증감
+                frames.push(`human/${i}.png`) 
+                //변수 frames에서의 i반복문을 증감한 만큼 이미지파일1~14를 추가
+                // 우혁이형 : i를 대입한 png를 넣는다.
+                                
+
+                let count = 0;  //변수 선언
+                setInterval(()=>{       //16초 반복하는 함수
+                    $('#image').attr('src', frames[count++% frames.length]);
+                        //이미지라는 아이디를 가지고 있는 html코드 'src'코드에 프레임값을 배열
+                }, 1000/16);            //초당 a프레임
+
+        });
+    </script>
+</head>
+<body style="margin: 50px;">
+    <img id="image">
+    
+</body>
+</html>

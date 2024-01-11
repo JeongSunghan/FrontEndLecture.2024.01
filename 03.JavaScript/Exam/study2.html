@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function twoDight(num) { // twoDight 라는 함수명에 (num) 이라는 매개변수를 가진 함수 를 생성
+            return (num < 10) ? '0' + num : String(num);        
+            //twoDight 함수는 num매개변수를 받고 num<10 참일시 '0' + num : 거짓일시 String(num)
+            // ex) 4 = '04', 23 = '23'
+        }
+        function myDateTime(date){ //myDateTime 라는 함수명에 (date) 라는 매개변수를 가진 함수 생성
+            return `${date.getFullYear()}-${twoDight(date.getMonth()+1)}-${twoDight(date.getDate())} ` + 
+        `${twoDight(date.getHours())}:${twoDight(date.getMinutes())}:${twoDight(date.getSeconds())}`
+        //해당 매개변수 date의 각각의 함수로 데이터를 뽑고 원하는 글자생성
+        }
+        window.onload = function() {//페이지 로드되면 자동 실행되는 함수
+            setInterval(function() { //1초에 한번씩 반복되는 함수
+                const now = new Date(); //now 라는 변수명에 Date 라는 객체 저장
+                const week = '일월화수목금토'.split(''); 
+                //split 함수 = 해당글자를 ('')으로 나뉘어 글자를 배열로 저장
+                //ex ) week.get(0) = '일' week.get(1) = '월' week.get(2) = '화'
+                let dateStr = myDateTime(now).substring(0, 10);
+                //dateStr 이라는 변수에 now=Date 객체(현재날짜) 를 substring 함수로 0~10 글자만 때오기
+                //ex ) 2024-01-11
+                dateStr += '('+ week[now.getDay()]+')';
+                //dateStr 변수에 week배열에[date(now)객체getDay()함수를 실행]
+                //ex ) dateStr = 2024-01-11( 목(week[5]) )
+                const timeStr = myDateTime(now).substring(11);
+                // timeStr 이라는 함수에 현재 시간 담기
+                // ex ) 10:05:30:00000 시분초
+                document.getElementById('date').innerHTML=dateStr;
+                //'date'라는 html 코드에 dateStr ex ) 2024-01-11( 목(week[5]) ) 글자 삽입
+                document.getElementById('h1').src = `img/${timeStr[0]}.svg`
+                //'h1'라는 html 코드에 timeStr[0] ex ) 10:05:30 중 '1'숫자 대입 .svg파일 출력 
+                document.getElementById('h2').src = `img/${timeStr[1]}.svg`
+                //'h2'라는 html 코드에 timeStr[1] ex ) 10:05:30 중 '0'숫자 대입 .svg파일 출력
+                document.getElementById('m1').src = `img/${timeStr[3]}.svg`
+                //'m1'라는 html 코드에 timeStr[3] ex ) 10:05:30 중 '0'숫자 대입 .svg파일 출력
+                //timeStr[2] = 10:05:30 중 ':' 이기때문에 스킵
+                document.getElementById('m2').src = `img/${timeStr[4]}.svg`
+                //'m2'라는 html 코드에 timeStr[4] ex ) 10:05:30 중 '5'숫자 대입 .svg파일 출력
+                document.getElementById('s1').src = `img/${timeStr[6]}.svg`
+                //'s1'라는 html 코드에 timeStr[6] ex ) 10:05:30 중 '3'숫자 대입 .svg파일 출력
+                //timeStr[5] = 10:05:30 중 ':' 이기때문에 스킵
+                document.getElementById('s2').src = `img/${timeStr[7]}.svg`
+                //'s2'라는 html 코드에 timeStr[7] ex ) 10:05:30 중 '0'숫자 대입 .svg파일 출력
+                //img/1~12.svg 파일이 있을경우 시계처럼 홈페이지에 출력가능
+            }, 1000);   
+    </script>
+</body>
+</html>
